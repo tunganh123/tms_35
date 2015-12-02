@@ -1,0 +1,14 @@
+<div class="row">
+  <aside class="col-md-3">
+    <section class="user_info">
+      <%= t("button.member_user_of_course") %>
+    </section>
+    <%= render "shared/show_user_assign_course" %>  
+  </aside>
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <%= render "show", course: @course %>
+    </div>
+  </div>
+  <%= render "courses/activities" %>
+</div>
